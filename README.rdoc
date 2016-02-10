@@ -1,6 +1,7 @@
 == README
 
 Coder Manual Project Application
+
 Subscription based web application
 
 Things you may want to cover:
