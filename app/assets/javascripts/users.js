@@ -1,3 +1,4 @@
+/*global Stripe */
 $(document).ready(function() {
     Stripe.setPublishableKey($('meta[name="stripe-key"]').attr('content'));
     //watch for form submission
@@ -25,7 +26,6 @@ $(document).ready(function() {
     function stripeResponseHandler(status, response){
         //get reference to the form
         var f = $("#new_user");
-        
         //get token from the response
         var token = response.id;
         //add token to the form
